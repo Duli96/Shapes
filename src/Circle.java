@@ -1,9 +1,12 @@
-public class Circle implements IShape {
+import static java.lang.String.format;
 
+public class Circle extends Shape {
+    public static final String NAME = "Circle";
     private static final float PI = (float) Math.PI;
     private final float radius;
 
     public Circle(float radius) {
+        super(NAME);
         this.radius = radius;
     }
 
@@ -15,5 +18,11 @@ public class Circle implements IShape {
     @Override
     public float calculatePerimeter() {
         return 2 * PI * radius;
+    }
+
+    @Override
+    public String toString() {
+        return "\n" +super.toString() + "\n"
+                + "Radius=" + radius + "\n\n";
     }
 }
