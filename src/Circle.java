@@ -23,6 +23,6 @@ public class Circle extends Shape {
     @Override
     public String toString() {
         return "\n" +super.toString() + "\n"
-                + "Radius=" + radius + "\n\n";
+                + "Radius=" + radius;
     }
 }
