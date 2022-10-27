@@ -15,6 +15,6 @@ public class Rectangle implements IShape {
 
     @Override
     public float calculatePerimeter() {
-        return 2 * (height+width);
+        return 2 * (height + width);
     }
 }

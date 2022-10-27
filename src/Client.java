@@ -54,19 +54,7 @@ public class Client {
             }
 
         }
-        printResults();
-    }
-
-    public void printResults() {
-        if (shape != null) {
-            System.out.println();
-            System.out.print("Area: ");
-            System.out.printf("%.2f", shape.calculateArea());
-            System.out.println();
-            System.out.print("Perimeter: ");
-            System.out.printf("%.2f", shape.calculatePerimeter());
-
-        }
+        Utils.printResults(shape);
     }
 
 
